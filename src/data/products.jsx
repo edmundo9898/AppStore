@@ -6,6 +6,7 @@ const products = {
       name: "Smartphone",
       price: 999.99,
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      
     },
     {
       id: 2,
@@ -55,6 +56,7 @@ const products = {
       name: "Shoes",
       price: 129.99,
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      
     },
     {
       id: 9,
@@ -62,6 +64,7 @@ const products = {
       name: "Headphones",
       price: 79.99,
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
     },
     {
       id: 10,

@@ -1,13 +1,11 @@
 import React from "react";
-import {Button, TextButton} from './styles';
-import {View, Text} from 'react-native';
+import { Button, TextButton } from "./styles";
 
-
-export const CustomButtonHome = ({ OnPress, title }) => {
-
+export const CustomButtonHome = ({ onPress, categoryName }) => {
   return (
-    <Button >
-      <TextButton></TextButton>
-    </Button>
+
+      <Button onPress={onPress}>
+        <TextButton>{categoryName}</TextButton>
+      </Button>
   );
 };

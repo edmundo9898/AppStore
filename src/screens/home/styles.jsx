@@ -3,7 +3,8 @@ import styled from "styled-components/native";
 export const Container = styled.SafeAreaView`
 flex: 1;
 background-color: ${({theme}) => theme.background};
-padding: 10px;
+padding: 5px;
+
 
 `;
 
@@ -40,4 +41,11 @@ border-radius: 10px;
 `;
 export const Text = styled.Text`
 color: ${({theme}) => theme.primary};
+`;
+
+export const ContainerNamesCategory = styled.View`
+flex-direction: row;
+margin: 20px 0;
+align-items: center;
+justify-content: space-evenly;
 `;
