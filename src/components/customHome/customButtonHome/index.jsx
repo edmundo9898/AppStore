@@ -1,11 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button, TextButton } from "./styles";
 
-export const CustomButtonHome = ({ onPress, categoryName }) => {
+export const CustomButtonHome = ({
+  onPress,
+  categoryName,
+  onFocus,
+  onBlur,
+  focused,
+}) => {
   return (
-
-      <Button onPress={onPress}>
-        <TextButton>{categoryName}</TextButton>
-      </Button>
+    <Button
+      onFocus={onFocus}
+      onBlur={onBlur}
+      onPress={onPress}
+      focused={focused}
+      activeOpacity={0.8}
+    >
+      <TextButton focused={focused}>{categoryName}</TextButton>
+    </Button>
   );
 };

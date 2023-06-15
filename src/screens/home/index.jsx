@@ -23,8 +23,19 @@ export default function Home() {
 
   const [selectedCategory, setSelectedCategory] = useState("all");
   const [filteredProducts, setFilteredProducts] = useState([]);
+
+  const [buttonFocused, setButtonFocused] = useState(null);
+
   const handleCategorySelect = (category) => {
     setSelectedCategory(category);
+  };
+
+  const handleButtonFocused = (category) => {
+    setButtonFocused(category);
+  };
+
+  const handleButtonNotFocused = () => {
+    setButtonFocused(null);
   };
 
   useEffect(() => {
@@ -42,8 +53,6 @@ export default function Home() {
     loadCategory();
   }, [selectedCategory]);
 
-  const navigation = useNavigation();
-
   return (
     <Container theme={theme}>
       <HeaderHome />
@@ -58,8 +67,11 @@ export default function Home() {
         {dataCategories.map((category) => (
           <CustomButtonHome
             key={category.id}
+            focused={selectedCategory === category.name}
             onPress={() => handleCategorySelect(category.name)}
             categoryName={category.name}
+            onFocus={() => handleButtonFocused(category.id)}
+            onBlur={handleButtonNotFocused}
           />
         ))}
       </ContainerNamesCategory>
@@ -78,10 +90,10 @@ export default function Home() {
 
 const styles = StyleSheet.create({
   flatListContent: {
-     width: '100%',
-     alignItems: 'center',
-     justifyContent: 'center',
-     paddingStart: 10,
-     paddingEnd: 10
- },
+    width: "100%",
+    alignItems: "center",
+    justifyContent: "center",
+    paddingStart: 10,
+    paddingEnd: 10,
+  },
 });
