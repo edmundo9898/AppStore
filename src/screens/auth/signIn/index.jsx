@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import {
   Container,
   TitleSign,
@@ -8,26 +8,30 @@ import {
   ContainerOr,
   TextOr,
 } from "./style";
-import { ThemeContext } from "../../contexts/ThemeProvider";
+import { ThemeContext } from "../../../contexts/ThemeProvider";
+import { FirebaseContext } from "../../../contexts/FirebaseProvider";
 import {
   CustomTextInput,
   CustomButton,
   CustomAuthLink,
   CustomSocialButton,
-} from "../../components/custom";
+} from "../../../components/custom";
 
 import { useNavigation } from "@react-navigation/native";
 
 export default function SignIn() {
   const { theme, testeAlert } = useContext(ThemeContext);
+  const { signIn } = useContext(FirebaseContext);
+  const [userEmail, setUserEmail] = useState("");
+  const [userPassword, setUserPassword] = useState("");
 
   const navigation = useNavigation();
 
-  const goHome = () => {
-    navigation.navigate("Home");
+  const handleSignIn = () => {
+    signIn(userEmail, userPassword);
   };
 
-  const handleSignUp = () => {
+  const handleGoSignUp = () => {
     navigation.navigate("SignUp");
   };
 
@@ -35,23 +39,23 @@ export default function SignIn() {
     <Container theme={theme}>
       <TitleSign theme={theme}>Sign In</TitleSign>
       <CustomTextInput
-        /* value={}
-    onChangeText={}
- */ placeholder="Email Address"
+        value={userEmail}
+        onChangeText={(text) => setUserEmail(text)}
+        placeholder="Email Address"
       />
       <CustomTextInput
-        /* value={}
-    onChangeText={} */
+        value={userPassword}
+        onChangeText={setUserPassword}
         placeholder="Password"
         isPassword
       />
       <ButtonForgotLogin>
         <ForgotLogin theme={theme}>Forgot Password?</ForgotLogin>
       </ButtonForgotLogin>
-      <CustomButton OnPress={goHome} title="Sign In" />
+      <CustomButton OnPress={handleSignIn} title="Sign In" />
       <CustomAuthLink
         title="Don’t have an account?"
-        OnPress={handleSignUp}
+        OnPress={handleGoSignUp}
         titleLink="Sign Up"
       />
       <ContainerOr>
