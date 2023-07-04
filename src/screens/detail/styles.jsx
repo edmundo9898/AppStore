@@ -11,5 +11,5 @@ justify-content: center;
 `;
 
 export const Text = styled.Text`
-color: ${({theme}) => theme.color};
+color: ${({theme}) => theme.secondary};
 `;

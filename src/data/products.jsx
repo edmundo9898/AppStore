@@ -6,6 +6,8 @@ const products = {
       name: "Smartphone",
       price: 999.99,
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      image: "https://images.unsplash.com/photo-1634403665481-74948d815f03?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80",
+      
       
     },
     {
@@ -14,6 +16,7 @@ const products = {
       name: "Laptop",
       price: 1499.99,
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      image: "https://images.unsplash.com/photo-1634403665481-74948d815f03?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80",
     },
     {
       id: 3,
@@ -21,6 +24,7 @@ const products = {
       name: "Necklace",
       price: 199.99,
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      image: "https://images.unsplash.com/photo-1634403665481-74948d815f03?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80", 
     },
     {
       id: 4,
@@ -28,6 +32,7 @@ const products = {
       name: "Ring",
       price: 99.99,
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      image: "https://images.unsplash.com/photo-1634403665481-74948d815f03?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80",
     },
     {
       id: 5,
@@ -35,6 +40,7 @@ const products = {
       name: "T-Shirt",
       price: 29.99,
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      image: "https://images.unsplash.com/photo-1634403665481-74948d815f03?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80",
     },
     {
       id: 6,
@@ -42,6 +48,7 @@ const products = {
       name: "Jeans",
       price: 69.99,
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      image: "https://images.unsplash.com/photo-1634403665481-74948d815f03?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80",
     },
     {
       id: 7,
@@ -49,6 +56,7 @@ const products = {
       name: "Dress",
       price: 79.99,
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      image: "https://images.unsplash.com/photo-1634403665481-74948d815f03?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80",
     },
     {
       id: 8,
@@ -56,6 +64,7 @@ const products = {
       name: "Shoes",
       price: 129.99,
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      image: "https://images.unsplash.com/photo-1634403665481-74948d815f03?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80",
       
     },
     {
@@ -64,7 +73,7 @@ const products = {
       name: "Headphones",
       price: 79.99,
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80',
+      image: "https://images.unsplash.com/photo-1634403665481-74948d815f03?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80",
     },
     {
       id: 10,
@@ -72,6 +81,7 @@ const products = {
       name: "Bracelet",
       price: 59.99,
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      image: "https://images.unsplash.com/photo-1634403665481-74948d815f03?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80",
     },
     {
       id: 11,
@@ -79,6 +89,7 @@ const products = {
       name: "Tablet",
       price: 699.99,
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      image: "https://images.unsplash.com/photo-1634403665481-74948d815f03?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80",
     },
     {
       id: 12,
@@ -86,6 +97,7 @@ const products = {
       name: "Earrings",
       price: 49.99,
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      image: "https://images.unsplash.com/photo-1634403665481-74948d815f03?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80",
     },
     {
       id: 13,
@@ -93,6 +105,7 @@ const products = {
       name: "Sweater",
       price: 49.99,
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      image: "https://images.unsplash.com/photo-1634403665481-74948d815f03?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80",
     },
     {
       id: 14,
@@ -100,6 +113,7 @@ const products = {
       name: "Skirt",
       price: 39.99,
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      image: "https://images.unsplash.com/photo-1634403665481-74948d815f03?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80",
     },
     {
       id: 15,
@@ -107,6 +121,7 @@ const products = {
       name: "Camera",
       price: 399.99,
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      image: "https://images.unsplash.com/photo-1634403665481-74948d815f03?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80",
     },
     {
       id: 16,
@@ -114,6 +129,7 @@ const products = {
       name: "Smartwatch",
       price: 199.99,
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      image: "https://images.unsplash.com/photo-1634403665481-74948d815f03?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80",
     },
     {
       id: 17,
@@ -121,6 +137,7 @@ const products = {
       name: "Anklet",
       price: 29.99,
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      image: "https://images.unsplash.com/photo-1634403665481-74948d815f03?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80",
     },
     {
       id: 18,
@@ -128,6 +145,7 @@ const products = {
       name: "Watch",
       price: 149.99,
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      image: "https://images.unsplash.com/photo-1634403665481-74948d815f03?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80",
     },
     {
       id: 19,
@@ -135,6 +153,7 @@ const products = {
       name: "Hoodie",
       price: 59.99,
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      image: "https://images.unsplash.com/photo-1634403665481-74948d815f03?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80",
     },
     {
       id: 20,
@@ -142,6 +161,7 @@ const products = {
       name: "Jacket",
       price: 129.99,
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      image: "https://images.unsplash.com/photo-1634403665481-74948d815f03?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80",
     },
   ],
 };

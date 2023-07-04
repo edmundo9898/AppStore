@@ -13,10 +13,10 @@ export default function Routes() {
         headerShown: false,
       }}
     >
-      <Stack.Screen name="Home" component={Home} />
+      
       <Stack.Screen name="SignIn" component={SignIn} />
       <Stack.Screen name="SignUp" component={SignUp} />
-
+      <Stack.Screen name="Home" component={Home} />
       <Stack.Screen name="Detail" component={Detail} />
     </Stack.Navigator>
   );

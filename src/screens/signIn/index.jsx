@@ -13,8 +13,7 @@ import {
   CustomTextInput,
   CustomButton,
   CustomAuthLink,
-  CustomSocialButton
-
+  CustomSocialButton,
 } from "../../components/custom";
 
 import { useNavigation } from "@react-navigation/native";
@@ -26,8 +25,7 @@ export default function SignIn() {
 
   const goHome = () => {
     navigation.navigate("Home");
-   }
-           
+  };
 
   const handleSignUp = () => {
     navigation.navigate("SignUp");

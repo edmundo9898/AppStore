@@ -12,15 +12,15 @@ export default function Detail() {
 
 
     const handleDetail = () => {
-        navigation.navigate("Detail")
+        navigation.goBack()
     }
 
  return (
    <Container theme={theme}>
     <TouchableOpacity onPress={handleDetail}>
-        <Text theme={theme}>Detail</Text>
+        <Text theme={theme}>Voltar</Text>
     </TouchableOpacity>
-    <TouchableOpacity onPress={toggleTheme}>
+    <TouchableOpacity>
         <Text theme={theme}>Mudar de tema</Text>
     </TouchableOpacity>
    </Container>

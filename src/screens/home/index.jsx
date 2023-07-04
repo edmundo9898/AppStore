@@ -31,12 +31,13 @@ export default function Home() {
   };
 
   const handleButtonFocused = (category) => {
-    setButtonFocused(category);
+    if (category) {
+      setButtonFocused(category);
+    } else {
+      setButtonFocused(null);
+    }
   };
 
-  const handleButtonNotFocused = () => {
-    setButtonFocused(null);
-  };
 
   useEffect(() => {
     const loadCategory = () => {
@@ -71,7 +72,7 @@ export default function Home() {
             onPress={() => handleCategorySelect(category.name)}
             categoryName={category.name}
             onFocus={() => handleButtonFocused(category.id)}
-            onBlur={handleButtonNotFocused}
+            onBlur={() => handleButtonFocused(null)}
           />
         ))}
       </ContainerNamesCategory>

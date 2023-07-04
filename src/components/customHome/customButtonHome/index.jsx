@@ -14,7 +14,7 @@ export const CustomButtonHome = ({
       onBlur={onBlur}
       onPress={onPress}
       focused={focused}
-      activeOpacity={0.8}
+      activeOpacity={1}
     >
       <TextButton focused={focused}>{categoryName}</TextButton>
     </Button>
